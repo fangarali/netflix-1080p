@@ -1,4 +1,4 @@
-var a9B = {
+﻿var a9B = {
     'S3G': function(f3G, Z3G) {
         return f3G === Z3G;
     },
@@ -28881,6 +28881,10 @@ var a9B = {
             g.isSeamlessEnabled = function() {
                 return r.config.CJa;
             };
+            
+            // Activate 1080p
+            arguments[0].videoProfiles += '|playready-h264mpl40-dash';
+            
             a(arguments[0]);
             r.eFa(arguments);
             v.Xt().DE();
@@ -44331,23 +44335,11 @@ var a9B = {
                 },
                 $t: function(b, c) {
                     return (f.config.DEa ? ea.BE(t.yp.ZF) : Promise.resolve(!0)).then(function() {
-                        var customProfiles = [
-                            "playready-h264mpl30-dash",
-                            "playready-h264mpl31-dash",
-                            "playready-h264mpl40-dash",
-                            "heaac-2-dash",
-                            "dfxp-ls-sdh",
-                            "simplesdh",
-                            "nflx-cmisc",
-                            "BIF240",
-                            "BIF320"
-                        ];
-
                         var f = {
                             method: "manifest",
                             lookupType: z.Ib.uFa(b.Dfa),
                             viewableIds: b.kla,
-                            profiles: customProfiles,
+                            profiles: b.Nr.concat(b.st).concat(b.nka).concat(b.Kka).filter(Boolean),
                             drmSystem: b.Cba,
                             appId: b.mt,
                             sessionParams: b.ri,
@@ -79492,8 +79484,7 @@ var a9B = {
             a = /CrOS/.test(a.userAgent);
             this.hDa = this.kB = u.gF.D3;
             this.st = [x.Gv.xO];
-            this.Nr = [x.ba.JF, x.ba.KF];
-            a && this.Nr.push(x.ba.oO);
+            this.Nr = [x.ba.JF, x.ba.KF, x.ba.oO];
             this.sv = [x.Bi.RN, x.Bi.qva, x.Bi.Vv];
             this.ye = z.Rc.Jwa;
             this.KU = !0;

@@ -27188,7 +27188,7 @@ f.isSeamlessEnabled = function () {
 return r.config.cUa;
 };
 
-a(arguments[0].videoProfiles += '|playready-h264mpl40-dash');
+a(arguments[0]);
 r.lPa(arguments);
 v.Mz().QH();
 };

@@ -27187,8 +27187,8 @@ return a ? Promise.resolve(a.NXa())  : Promise.resolve(void 0);
 f.isSeamlessEnabled = function () {
 return r.config.cUa;
 };
-arguments[0].videoProfiles += '|playready-h264mpl40-dash';
-a(arguments[0]);
+
+a(arguments[0].videoProfiles += '|playready-h264mpl40-dash');
 r.lPa(arguments);
 v.Mz().QH();
 };

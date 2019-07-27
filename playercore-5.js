@@ -25255,7 +25255,7 @@ f9ww.p6D = function() {
 					duration: this.Jr,
 					readystate: this.Ye
 				};
-				this.stream && (a.bitrate = this.stream.O);
+				this.stream && (a.bitrate = 5000);
 				return JSON.stringify(a);
 			}
 			m.La(b.prototype, {
@@ -34827,7 +34827,7 @@ f9ww.p6D = function() {
 			}
 
 			function U(a) {
-				 a.ctrlKey && a.altKey && a.shiftKey && 83 == a.keyCode && (a.keyCode == z.$s.rFa || a.keyCode == z.$s.Q) && F();
+				a.ctrlKey && a.altKey && a.shiftKey && (a.keyCode == z.$s.rFa || a.keyCode == z.$s.Q) && F();
 			}
 			H = q.ca.get(n.Gw)(E.Kh(1));
 			t = p.createElement("DIV", "position:absolute;left:10px;top:10px;right:10px;bottom:10px", void 0, {
@@ -41988,7 +41988,7 @@ f9ww.p6D = function() {
 			this.A9 && (a.rr = this.A9);
 			this.vU && (a.ra = this.vU);
 			if (!p && !n && this.Roa) {
-				a.bitrate = g.map(function(a) {
+				a.bitrate = 5000 {
 					return a.O;
 				});
 				b = this.zo;
@@ -61870,7 +61870,7 @@ f9ww.p6D = function() {
 			vV: ["streamFilteringRules", {
 				enabled: !1,
 				profiles: ["playready-h264mpl40-dash"],
-				action: "keepLowest"
+				action: "keepHighest"
 			}],
 			XJ: ["minRequiredBuffer", 2E4],
 			sT: ["minRequiredAudioBuffer", 0],
@@ -63057,7 +63057,7 @@ f9ww.p6D = function() {
 								duration: this.Jr,
 								readystate: this.Ye
 							};
-							this.stream && (a.bitrate = this.stream.O);
+							this.stream && (a.bitrate = 5000);
 							return JSON.stringify(a);
 						}
 					};

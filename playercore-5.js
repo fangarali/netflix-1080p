@@ -23701,13 +23701,6 @@ f9ww.p6D = function() {
 				a = p.ca.get(x.lN).b2();
 				return a ? Promise.resolve(a.j$a()) : Promise.resolve(void 0);
 			};
-			this.
-
-			isSeamless
-
-			Enabled = function() {
-				return h.config.P5a;
-			};
 			this.g9 = p.ca.get(m.BY);
 			this.cCa(a);
 			h.v0a([a]);

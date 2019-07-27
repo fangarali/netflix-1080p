@@ -61869,8 +61869,8 @@ f9ww.p6D = function() {
 			$ua: ["maxAllowedVmaf", Infinity],
 			vV: ["streamFilteringRules", {
 				enabled: !1,
-				profiles: ["playready-h264mpl40-dash"],
-				action: "keepLowest"
+				profiles: ["dfxp-ls-sdh"],
+				action: "keepHighest"
 			}],
 			XJ: ["minRequiredBuffer", 2E4],
 			sT: ["minRequiredAudioBuffer", 0],

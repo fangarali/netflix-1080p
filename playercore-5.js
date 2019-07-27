@@ -17083,7 +17083,7 @@ f9ww.p6D = function() {
 					return Q("audioProfiles", q.dg(a, u.lMa));
 				},
 				LDb: function(a) {
-					return H("enableHD", q.dg(a, !0));
+					return H("disableHD", q.dg(a, !1));
 				},
 				VV: c(n, "videoCapabilityDetectorType", x.qj.dw),
 				L0: c(n, "audioCapabilityDetectorType", x.Yv.dw),
@@ -18984,7 +18984,7 @@ f9ww.p6D = function() {
 			a[a.uha = 4] = "Safari";
 		}(d.qj || (d.qj = {})));
 		(function(a) {
-			a[a.aG = 1] = "HD";
+			a[a.aG = 0] = "SD";
 			a[a.PM = 1] = "HD";
 			a[a.BN = 2] = "UHD";
 			a[a.Fo = 3] = "DV";
@@ -21538,10 +21538,10 @@ f9ww.p6D = function() {
 		});
 		(function(a) {
 			a[a.em = 0] = "STANDARD";
-			a[a.ct = 1] = "STANDARD";
+			a[a.ct = 1] = "LIMITED";
 		}(d.Ai || (d.Ai = {})));
 		d.mua = function(a) {
-			return ["STANDARD", "STANDARD"][a];
+			return ["STANDARD", "LIMITED"][a];
 		};
 	}, function(g, d, a) {
 		var b, c, k, h, f, p, m, q;
@@ -61870,7 +61870,7 @@ f9ww.p6D = function() {
 			vV: ["streamFilteringRules", {
 				enabled: !1,
 				profiles: ["playready-h264mpl40-dash"],
-				action: "keepHighest"
+				action: "keepLowest"
 			}],
 			XJ: ["minRequiredBuffer", 2E4],
 			sT: ["minRequiredAudioBuffer", 0],

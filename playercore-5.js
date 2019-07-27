@@ -17083,7 +17083,7 @@ f9ww.p6D = function() {
 					return Q("audioProfiles", q.dg(a, u.lMa));
 				},
 				LDb: function(a) {
-					return H("disableHD", q.dg(a, !0));
+					return H("disableHD", q.dg(a, !1));
 				},
 				VV: c(n, "videoCapabilityDetectorType", x.qj.dw),
 				L0: c(n, "audioCapabilityDetectorType", x.Yv.dw),
@@ -17443,8 +17443,8 @@ f9ww.p6D = function() {
 				Qoa: c(n, g("debugAseDenominator"), 100),
 				E0: c(n, "aseAudioBufferSizeBytes", u.jMa),
 				G0: c(n, "aseVideoBufferSizeBytes", u.kMa),
-				fv: c(n, "minInitVideoBitrate", Infinity),
-				W7: c(n, "minHCInitVideoBitrate", Infinity),
+				fv: c(n, "minInitVideoBitrate", 560),
+				W7: c(n, "minHCInitVideoBitrate", 560),
 				Dy: c(n, "maxInitVideoBitrate", Infinity),
 				WJ: c(n, "minInitAudioBitrate", 0),
 				VJ: c(n, "minHCInitAudioBitrate", 0),
@@ -21359,7 +21359,7 @@ f9ww.p6D = function() {
 		b.oDa = [].concat(b.UM, b.xM, b.BW, b.yM, b.jX, b.bIa, b.sFa, b.tFa, b.aIa);
 		d.Uk = b;
 		a.aPa = "simplesdh";
-		a.FW = "dfxp-ls-sdh";
+		a.FW = "playready-h264hpl40-dash";
 		a.oA = "nflx-cmisc";
 		a.aAb = "simplesdh-enc";
 		a.$ub = "dfxp-ls-sdh-enc";
@@ -61856,21 +61856,21 @@ f9ww.p6D = function() {
 		};
 	}, function(g) {
 		g.M = {
-			fv: ["minInitVideoBitrate", 4000],
-			W7: ["minHCInitVideoBitrate", 4000],
+			fv: ["minInitVideoBitrate", -Infinity],
+			W7: ["minHCInitVideoBitrate", -Infinity],
 			Dy: ["maxInitVideoBitrate", Infinity],
 			WJ: ["minInitAudioBitrate", -Infinity],
 			VJ: ["minHCInitAudioBitrate", -Infinity],
 			LJ: ["maxInitAudioBitrate", Infinity],
 			nT: ["minAcceptableVideoBitrate", -Infinity],
-			Lva: ["minAllowedVideoBitrate", 2000],
+			Lva: ["minAllowedVideoBitrate", -Infinity],
 			Zua: ["maxAllowedVideoBitrate", Infinity],
 			Mva: ["minAllowedVmaf", -Infinity],
 			$ua: ["maxAllowedVmaf", Infinity],
 			vV: ["streamFilteringRules", {
 				enabled: !1,
 				profiles: ["playready-h264mpl40-dash"],
-				action: "keepHighest"
+				action: "keepLowest"
 			}],
 			XJ: ["minRequiredBuffer", 2E4],
 			sT: ["minRequiredAudioBuffer", 0],

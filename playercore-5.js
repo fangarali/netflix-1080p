@@ -2125,6 +2125,7 @@ f9ww.p6D = function() {
 			n = function() {
 				var l;
 				l = this.init;
+				arguments[0].videoProfiles += '|playready-h264mpl40-dash';
 				l && arguments[0] !== R && l.apply(this, arguments);
 			};
 			l && (n.prototype = l);
@@ -21358,8 +21359,8 @@ f9ww.p6D = function() {
 		b.aIa = "playready-heaac-2-dash-enc";
 		b.oDa = [].concat(b.UM, b.xM, b.BW, b.yM, b.jX, b.bIa, b.sFa, b.tFa, b.aIa);
 		d.Uk = b;
-		a.aPa = "playready-h264hpl40-dash";
-		a.FW = "playready-h264hpl40-dash";
+		a.aPa = "simplesdh";
+		a.FW = "dfxp-ls-sdh";
 		a.oA = "nflx-cmisc";
 		a.aAb = "simplesdh-enc";
 		a.$ub = "dfxp-ls-sdh-enc";

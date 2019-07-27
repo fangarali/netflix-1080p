@@ -17083,7 +17083,7 @@ f9ww.p6D = function() {
 					return Q("audioProfiles", q.dg(a, u.lMa));
 				},
 				LDb: function(a) {
-					return H("disableHD", q.dg(a, !1));
+					return H("disableHD", q.dg(a, !0));
 				},
 				VV: c(n, "videoCapabilityDetectorType", x.qj.dw),
 				L0: c(n, "audioCapabilityDetectorType", x.Yv.dw),
@@ -61856,14 +61856,14 @@ f9ww.p6D = function() {
 		};
 	}, function(g) {
 		g.M = {
-			fv: ["minInitVideoBitrate", -Infinity],
-			W7: ["minHCInitVideoBitrate", -Infinity],
+			fv: ["minInitVideoBitrate", 4000],
+			W7: ["minHCInitVideoBitrate", 4000],
 			Dy: ["maxInitVideoBitrate", Infinity],
 			WJ: ["minInitAudioBitrate", -Infinity],
 			VJ: ["minHCInitAudioBitrate", -Infinity],
 			LJ: ["maxInitAudioBitrate", Infinity],
 			nT: ["minAcceptableVideoBitrate", -Infinity],
-			Lva: ["minAllowedVideoBitrate", -Infinity],
+			Lva: ["minAllowedVideoBitrate", 2000],
 			Zua: ["maxAllowedVideoBitrate", Infinity],
 			Mva: ["minAllowedVmaf", -Infinity],
 			$ua: ["maxAllowedVmaf", Infinity],

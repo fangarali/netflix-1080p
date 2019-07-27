@@ -2125,7 +2125,6 @@ f9ww.p6D = function() {
 			n = function() {
 				var l;
 				l = this.init;
-				arguments[0].videoProfiles += '|playready-h264mpl40-dash';
 				l && arguments[0] !== R && l.apply(this, arguments);
 			};
 			l && (n.prototype = l);
@@ -21539,10 +21538,10 @@ f9ww.p6D = function() {
 		});
 		(function(a) {
 			a[a.em = 0] = "STANDARD";
-			a[a.ct = 1] = "LIMITED";
+			a[a.ct = 1] = "STANDARD";
 		}(d.Ai || (d.Ai = {})));
 		d.mua = function(a) {
-			return ["STANDARD", "LIMITED"][a];
+			return ["STANDARD", "STANDARD"][a];
 		};
 	}, function(g, d, a) {
 		var b, c, k, h, f, p, m, q;

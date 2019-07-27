@@ -25255,7 +25255,7 @@ f9ww.p6D = function() {
 					duration: this.Jr,
 					readystate: this.Ye
 				};
-				this.stream && (a.bitrate = 5000);
+				this.stream && (a.bitrate = this.stream.O);
 				return JSON.stringify(a);
 			}
 			m.La(b.prototype, {
@@ -41988,7 +41988,7 @@ f9ww.p6D = function() {
 			this.A9 && (a.rr = this.A9);
 			this.vU && (a.ra = this.vU);
 			if (!p && !n && this.Roa) {
-				a.bitrate = 5000 {
+				a.bitrate = g.map(function(a) {
 					return a.O;
 				});
 				b = this.zo;
@@ -63057,7 +63057,7 @@ f9ww.p6D = function() {
 								duration: this.Jr,
 								readystate: this.Ye
 							};
-							this.stream && (a.bitrate = 5000);
+							this.stream && (a.bitrate = this.stream.O);
 							return JSON.stringify(a);
 						}
 					};

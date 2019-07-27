@@ -17083,7 +17083,7 @@ f9ww.p6D = function() {
 					return Q("audioProfiles", q.dg(a, u.lMa));
 				},
 				LDb: function(a) {
-					return H("disableHD", q.dg(a, !1));
+					return H("enableHD", q.dg(a, !0));
 				},
 				VV: c(n, "videoCapabilityDetectorType", x.qj.dw),
 				L0: c(n, "audioCapabilityDetectorType", x.Yv.dw),

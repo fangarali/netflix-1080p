@@ -18984,7 +18984,7 @@ f9ww.p6D = function() {
 			a[a.uha = 4] = "Safari";
 		}(d.qj || (d.qj = {})));
 		(function(a) {
-			a[a.aG = 0] = "SD";
+			a[a.aG = 1] = "HD";
 			a[a.PM = 1] = "HD";
 			a[a.BN = 2] = "UHD";
 			a[a.Fo = 3] = "DV";
@@ -61869,7 +61869,7 @@ f9ww.p6D = function() {
 			$ua: ["maxAllowedVmaf", Infinity],
 			vV: ["streamFilteringRules", {
 				enabled: !1,
-				profiles: ["dfxp-ls-sdh"],
+				profiles: ["playready-h264mpl40-dash"],
 				action: "keepHighest"
 			}],
 			XJ: ["minRequiredBuffer", 2E4],
